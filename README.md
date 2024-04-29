@@ -1,5 +1,9 @@
 # Proyecto VUE 3
 
+Este proyecto fue desarrollado por Maria Jose Ortega.
+
+Fecha de creación: April 29, 2024
+
 ## Instalación de Vue.js
 
 Para comenzar con el desarrollo del proyecto, primero debes asegurarte de tener Vue.js instalado en tu entorno de desarrollo. Puedes instalarlo usando npm (Node Package Manager) con el siguiente comando:
