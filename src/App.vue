@@ -46,6 +46,7 @@ This structure allows the HelloWorld component to be used within the App compone
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
     margin-top: 60px;
+    overflow-y: scroll;
   }
   html,
   body {
@@ -54,4 +55,7 @@ This structure allows the HelloWorld component to be used within the App compone
     overflow: hidden;
     position: relative;
   }
+ 
 </style>
+
+

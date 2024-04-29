@@ -56,5 +56,6 @@ This scoped style block defines a grid layout where each row contains three colu
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
         grid-gap: 10px; /* Espacio entre las columnas */
+        margin-bottom: 50px;
     }
 </style>

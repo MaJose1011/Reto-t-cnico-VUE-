@@ -9,6 +9,7 @@ Each card represents a product, displaying its image, name, and price.
         <div class="details-container">
             <p>Sofa 243</p>
             <p>$156</p>
+            <button style="background-color: #3498db; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Añadir al carrito</button>
         </div>
     </div>
     <div class="card-container">
@@ -16,6 +17,8 @@ Each card represents a product, displaying its image, name, and price.
         <div class="details-container">
             <p>Lamp 54</p>
             <p>$756</p>
+            <button style="background-color: #3498db; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Añadir al carrito</button>
+
         </div>
     </div>
     <div class="card-container">
@@ -23,6 +26,7 @@ Each card represents a product, displaying its image, name, and price.
         <div class="details-container">
             <p>Fotal 34</p>
             <p>$362</p>
+            <button style="background-color: #3498db; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Añadir al carrito</button>
         </div>
     </div>
     <div class="card-container">
@@ -30,6 +34,7 @@ Each card represents a product, displaying its image, name, and price.
         <div class="details-container">
             <p>Fotal324</p>
             <p>$505</p>
+            <button style="background-color: #3498db; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Añadir al carrito</button>
         </div>
     </div>
     <div class="card-container">
@@ -37,6 +42,7 @@ Each card represents a product, displaying its image, name, and price.
         <div class="details-container">
             <p>sofa-1</p>
             <p>$243</p>
+            <button style="background-color: #3498db; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Añadir al carrito</button>
         </div>
     </div>
     <div class="card-container">
@@ -44,6 +50,8 @@ Each card represents a product, displaying its image, name, and price.
         <div class="details-container">
             <p>Fotal-2 </p>
             <p>$44</p>
+            <button style="background-color: #3498db; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Añadir al carrito</button>
+
         </div>
     </div>
 </template>
@@ -94,6 +102,6 @@ Scoped style block: .details-container centers text, fills width, aligns to bott
         overflow: hidden;
         text-align: center;
     }
-
+    
    
 </style>

@@ -5,21 +5,27 @@ Inside the container, there's an <h3> element displaying the text "Categorías +
 Below the <h3> element, there's another <div> element with the class categories, containing <p> elements for each category, such as "Mesas", "Lámparas", "Sillas", and "Sofás".-->
     
     <template>
-    <div class="category-container">
-        <h3>Categorías +</h3>
-        <div class="categories">
+        <div class="category-container">
+          <h3>Categorías</h3>         
+          <div class="categories">
             <p>Mesas</p>
-            <p>Lamparas</p>
+            <p>Lámparas</p>
             <p>Sillas</p>
-            <p>Sofas</p>
+            <p>Sofás</p>
+          </div>
+         <!-- Logout and Settings buttons -->
+          <div class="buttons">
+            <button @click="logout">Cerrar sesión</button>
+            <button @click="goToSettings">Configuración</button>
+          </div>
         </div>
-    </div>
-</template>
+      </template>
 
 <!--This script block defines a Vue.js component named CategoriasReto.
-
-name: Specifies the name of the component, which is used for debugging purposes and to identify the component within Vue.js devtools.
-data: This is a function that returns an object containing the component's data. In this case, it returns an object with a single property titulo set to the string 'Listado'. This data can be accessed and manipulated within the component's template. -->
+This code defines a Vue.js component named CategoriasReto. 
+It includes a data object with a property titulo, and two methods logout() and goToSettings(). 
+Each method contains comments explaining its purpose.
+-->
 <script>
 
 export default {
@@ -29,34 +35,82 @@ export default {
         return {
             titulo:'Listado'
         }
+    },
+    methods: {
+    logout() {
+      // Logic for logging out
+      console.log('Cerrar sesión');
+    },
+    goToSettings() {
+      // Logic for navigating to the settings page
+      console.log('Ir a configuración');
     }
+  }
 }
 </script>
 
 <!--In this scoped style block:
-
-h3: Styles all <h3> elements with a top margin of 30px.
-.categories: Styles elements with the class categories with a top margin of 30px, a left margin of 50px, and left-aligned text.
-.category-container: Styles elements with the class category-container. It sets a top margin of 20px, changes the text color to aliceblue, aligns the text to the center, sets a height of 70vh (70% of the viewport height), a width of 15vw (15% of the viewport width), a background color of #2C3538, and applies a box shadow for a visual effect. -->
+This code defines the styles for the scoped component. 
+It includes styling for headings, category container, categories, buttons, and their hover states.
+ Each section is documented with comments indicating its purpose and usage.
+-->
 
 <style scoped>
     h3{
         margin-top: 30px;
     }
-    .categories{
-        margin-top: 30px;
-        margin-left: 50px;
-        text-align: left;
-    }
-    .category-container{
-        margin-top: 20px;
-        color: aliceblue;
-        text-align: center;
-        height: 70vh;
-        width: 15vw;
-        background-color: #2C3538;
-        box-shadow: 4px 8px 58px -6px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 4px 8px 58px -6px rgba(0,0,0,0.75);
-        -moz-box-shadow: 4px 8px 58px -6px rgba(0,0,0,0.75);
-    }
+    /* Styles for your categories container */
+.category-container {
+  margin-top: 20px;
+  color: aliceblue;
+  text-align: center;
+  height: 70vh;
+  width: 15vw;
+  background-color: #2C3538;
+  box-shadow: 4px 8px 58px -6px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 4px 8px 58px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 8px 58px -6px rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: column;
+}
+
+.categories {
+  flex: 1; /* Adjusts the size of the menu to fill the remaining space */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns the elements to the start of the container */
+  padding-left: 20px; /* Adds padding to the left so the text isn't flush against the edge */
+
+}
+
+.categories p {
+  margin: 0; 
+  margin-bottom: 13px; 
+  margin-top: 10px; 
+
+}
+
+/* Styles for the buttons */
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px; 
+
+}
+
+.buttons button:last-child {
+  margin-bottom: 10; 
+}
+.buttons button:hover {
+  background-color: #2980b9;
+}
 </style>
