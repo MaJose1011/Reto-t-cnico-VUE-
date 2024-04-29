@@ -1,3 +1,5 @@
+//This code imports necessary modules, creates a Vue app, applies PrimeVue plugin, and mounts the app to the DOM:
+
 import { createApp } from 'vue'
 import App from './App.vue'
 import 'primevue/resources/themes/aura-light-green/theme.css'
@@ -8,3 +10,4 @@ const app = createApp(App);
 app.use(PrimeVue);
 
 createApp(App).use(PrimeVue).mount('#app')
+ 

@@ -2,6 +2,7 @@
     <TiendaReto />
 </template>
 
+<!--This Vue component script imports another component named TiendaReto, defines its own name and props, and registers TiendaReto as a child component:-->
 <script>
 
 import TiendaReto from './TiendaReto.vue'
